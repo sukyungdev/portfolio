@@ -7,9 +7,11 @@ import { ThemeProvider } from 'next-themes';
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <div className="bg-primary">
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
     </ThemeProvider>
   );
 }

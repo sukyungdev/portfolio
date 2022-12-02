@@ -1,4 +1,4 @@
-export const project = [
+export const projects = [
   {
     id: 1,
     projectName: 'project',
@@ -12,8 +12,8 @@ export const project = [
   {
     id: 2,
     projectName: 'Portfolio',
+    skill: ['React', 'Typescript', 'Redux', 'Style-component'],
     period: '2022',
-    skill: ['NextJS', 'Javascript', 'TailWindCSS'],
     demo: '',
     repo: '',
     description: 'text',
@@ -22,8 +22,8 @@ export const project = [
   {
     id: 3,
     projectName: 'Nanum Movie',
-    period: '2022',
     skill: ['React', 'Javascript', 'React-router', 'MUI'],
+    period: '2022',
     demo: '',
     repo: '',
     description: 'text',
@@ -31,9 +31,9 @@ export const project = [
   },
   {
     id: 4,
-    projectName: 'NextJs Blog',
-    period: '2022',
+    projectName: 'NextJS Blog',
     skill: ['NextJS', 'Typescript'],
+    period: '2022',
     demo: '',
     repo: '',
     description: 'text',
@@ -42,8 +42,8 @@ export const project = [
   {
     id: 5,
     projectName: 'Weather-Glass',
-    period: '2022',
     skill: ['React', 'Javascript', 'Style-component'],
+    period: '2022',
     demo: '',
     repo: '',
     description: 'text',
@@ -52,8 +52,8 @@ export const project = [
   {
     id: 6,
     projectName: 'Note me',
-    period: '2022',
     skill: ['Javascript', 'Vite'],
+    period: '2022',
     demo: '',
     repo: '',
     description: 'text',

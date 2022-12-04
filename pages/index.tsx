@@ -1,8 +1,23 @@
+import Axios from 'axios';
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 import Intro from '../components/indexComponent/Intro';
-import Animation from '../components/indexComponent/Animation';
+import ProjectList from '../components/ProjectList';
 
 export default function Home() {
+  const [projectData, setProjectData] = useState([]);
+  const API_URL = '/api/projects';
+
+  const getProjectData = async () => {
+    let projectListData = await Axios.get(API_URL);
+    console.log(projectListData.data);
+    setProjectData(projectListData.data);
+  };
+
+  useEffect(() => {
+    getProjectData();
+  }, []);
+
   return (
     <div>
       <Head>
@@ -14,6 +29,7 @@ export default function Home() {
         <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
           <Intro />
         </div>
+        <ProjectList projectData={projectData} />
       </section>
     </div>
   );

@@ -1,40 +1,31 @@
+import Axios from 'axios';
 import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
+import ProjectInfo from '../../components/ProjectInfo';
 
-// interface DataType {
-//   id: number | null;
-//   title: string;
-//   text: string;
-// }
-
-const Post = () => {
-  // const [data, setData] = useState<DataType>({ id: null, title: '', text: '' });
+const ProjectPage = () => {
   const router = useRouter();
-  const { id }: any = router.query;
+  const { id } = router.query;
 
-  const API_URL = `/api/comments/${id}`;
+  const [projectInfo, setProjectInfo] = useState({});
+  const API_URL = `/api/projects/${id}`;
 
-  // function getData() {
-  //   axios.get(API_URL).then((res) => {
-  //     console.log('this is api', res.data);
-  //     setData(res.data);
-  //   });
-  // }
+  const getProjectData = async () => {
+    let res = await Axios.get(API_URL);
+    setProjectInfo(res.data);
+  };
 
-  // useEffect(() => {
-  //   if (id) {
-  //     getData();
-  //   }
-  // }, [id]);
-
-  // console.log('setData', data);
+  useEffect(() => {
+    if (id) {
+      getProjectData();
+    }
+  }, [id]);
 
   return (
-    <div>
-      {/* <h1>{data && data.title}</h1>
-      <p>{data && data.id}</p>
-      <p>{data && data.text}</p> */}
+    <div className="container mx-auto">
+      <ProjectInfo projectInfo={projectInfo} />
     </div>
   );
 };
 
-export default Post;
+export default ProjectPage;

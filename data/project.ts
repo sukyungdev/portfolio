@@ -8,6 +8,7 @@ export const projects = [
     repo: '',
     description: 'text',
     point: '',
+    img: 'https://images.unsplash.com/photo-1670031652348-79bac7b88dfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4OXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const projects = [
     repo: '',
     description: 'text',
     point: '',
+    img: 'https://images.unsplash.com/photo-1670031652348-79bac7b88dfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4OXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const projects = [
     repo: '',
     description: 'text',
     point: '',
+    img: 'https://images.unsplash.com/photo-1670031652348-79bac7b88dfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4OXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ export const projects = [
     repo: '',
     description: 'text',
     point: '',
+    img: 'https://images.unsplash.com/photo-1670031652348-79bac7b88dfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4OXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ export const projects = [
     repo: '',
     description: 'text',
     point: '',
+    img: 'https://images.unsplash.com/photo-1670031652348-79bac7b88dfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4OXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
   },
   {
     id: 6,
@@ -58,5 +63,6 @@ export const projects = [
     repo: '',
     description: 'text',
     point: '',
+    img: 'https://images.unsplash.com/photo-1670031652348-79bac7b88dfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4OXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
   },
 ];

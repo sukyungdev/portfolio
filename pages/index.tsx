@@ -1,23 +1,9 @@
-import Axios from 'axios';
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
 import Intro from '../components/indexComponent/Intro';
 import ProjectList from '../components/ProjectList';
 
-export default function Home() {
-  const [projectData, setProjectData] = useState([]);
-  const API_URL = '/api/projects';
-
-  const getProjectData = async () => {
-    let projectListData = await Axios.get(API_URL);
-    console.log(projectListData.data);
-    setProjectData(projectListData.data);
-  };
-
-  useEffect(() => {
-    getProjectData();
-  }, []);
-
+export default function Home({ projectData }: { projectData: [] }) {
+  console.log('data', projectData);
   return (
     <div>
       <Head>
@@ -33,4 +19,14 @@ export default function Home() {
       </section>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const API_URL = 'http://localhost:3000/api/projects';
+  const res = await fetch(API_URL);
+  const projectData = await res.json();
+
+  return {
+    props: { projectData },
+  };
 }

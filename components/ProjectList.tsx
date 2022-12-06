@@ -14,7 +14,7 @@ export interface IprojectData {
 }
 
 export default function ProjectList({ projectData }: { projectData: IprojectData[] }) {
-  console.log('projectData', projectData);
+  // console.log('projectData', projectData);
   return (
     <>
       {projectData.map((item) => (
@@ -28,7 +28,6 @@ export default function ProjectList({ projectData }: { projectData: IprojectData
             <Link href="#">demo</Link>
             <Link href="#">Github repo</Link>
             <p>{item.point}</p>
-            {/* <p>{item.description}</p> */}
           </div>
         </div>
       ))}

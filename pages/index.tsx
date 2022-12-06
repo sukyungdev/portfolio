@@ -3,7 +3,7 @@ import Intro from '../components/indexComponent/Intro';
 import ProjectList from '../components/ProjectList';
 
 export default function Home({ projectData }: { projectData: [] }) {
-  console.log('data', projectData);
+  console.log(projectData);
   return (
     <div>
       <Head>

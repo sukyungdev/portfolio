@@ -13,14 +13,12 @@ export default function ProjectInfo({
 
   return (
     <div>
-      <h2>
-        {projectName}, {id}
-      </h2>
+      <h2>{projectName}</h2>
       <img src={img} alt="img" />
       <strong>{skill && skill.join(', ')}</strong>
       <span>{period}</span>
-      <Link href="#">{demo}</Link>
-      <Link href="#">{repo}</Link>
+      <Link href="#">demo</Link>
+      <Link href="#">repo</Link>
       <p>{point}</p>
       <p>{description}</p>
     </div>

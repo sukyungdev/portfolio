@@ -9,6 +9,7 @@ export interface IprojectData {
   demo: string;
   repo: string;
   description: string;
+  feature: [];
   point: string;
   img: string;
 }
@@ -27,7 +28,7 @@ export default function ProjectList({ projectData }: { projectData: IprojectData
             <span>{item.period}</span>
             <Link href="#">demo</Link>
             <Link href="#">Github repo</Link>
-            <p>{item.point}</p>
+            <p>{item.description}</p>
           </div>
         </div>
       ))}

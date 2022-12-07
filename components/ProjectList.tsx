@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
+import Image from 'next/image';
 
 export interface IprojectData {
   id: number;
@@ -19,16 +20,29 @@ export default function ProjectList({ projectData }: { projectData: IprojectData
   return (
     <>
       {projectData.map((item) => (
-        <div key={item.id} className="mx-auto">
+        <div key={item.id} className="flex flex-col rounded-xl">
           <Link href={`/projectPage/${item.id}`}>
-            <img src={item.img} alt="projectImg" />
+            <Image
+              className="rounded-t-xl"
+              src={item.img}
+              alt={`${item.projectName}-img`}
+              width="300"
+              height="200"
+              layout="responsive"
+              objectFit="none"
+              quality={100}
+            />
           </Link>
-          <div>
-            <h2>{item.projectName}</h2>
-            <span>{item.period}</span>
-            <Link href="#">demo</Link>
-            <Link href="#">Github repo</Link>
-            <p>{item.description}</p>
+          <div className="p-3">
+            <div className="flex justify-between">
+              <h2 className="text-xl">{item.projectName}</h2>
+              <div>
+                <Link href="#">Demo </Link>
+                <Link href="#">Repository</Link>
+              </div>
+            </div>
+            <span className="text-sm">{item.period}</span>
+            <p className="mt-3">{item.description}</p>
           </div>
         </div>
       ))}

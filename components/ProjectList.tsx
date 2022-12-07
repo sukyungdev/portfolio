@@ -22,7 +22,7 @@ export default function ProjectList({ projectData }: { projectData: IprojectData
   return (
     <>
       {projectData.map((item) => (
-        <div key={item.id} className="flex flex-col rounded-xl">
+        <div key={item.id} className="projectCard">
           <Link href={`/projectPage/${item.id}`}>
             <Image
               className="rounded-t-xl"

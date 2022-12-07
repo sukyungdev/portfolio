@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Intro from '../components/indexComponent/Intro';
 import ProjectList from '../components/ProjectList';
+import { server } from '../config/index';
 
 export default function Home({ projectData }: { projectData: [] }) {
   console.log(projectData);
@@ -29,7 +30,7 @@ export default function Home({ projectData }: { projectData: [] }) {
 }
 
 export async function getStaticProps() {
-  const API_URL = 'http://localhost:3000/api/projects';
+  const API_URL = `${server}/api/projects`;
   const res = await fetch(API_URL);
   const projectData = await res.json();
 

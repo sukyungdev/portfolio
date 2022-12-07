@@ -1,32 +1,34 @@
-import Axios from 'axios';
-import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
+import Head from 'next/head';
 import ProjectInfo from '../../components/ProjectInfo';
+import { IprojectData } from '../../components/ProjectList';
 import { server } from '../../config/index';
 
-const ProjectPage = () => {
-  const router = useRouter();
-  const { id } = router.query;
-
-  const [projectInfo, setProjectInfo] = useState({});
-  const API_URL = `${server}/api/projects/${id}`;
-
-  const getProjectData = async () => {
-    let res = await Axios.get(API_URL);
-    setProjectInfo(res.data);
-  };
-
-  useEffect(() => {
-    if (id) {
-      getProjectData();
-    }
-  }, [id]);
-
+const ProjectPage = ({ projectInfo }: { projectInfo: IprojectData }) => {
   return (
-    <div className="container mx-auto">
-      <ProjectInfo projectInfo={projectInfo} />
-    </div>
+    <>
+      {projectInfo && (
+        <>
+          <Head>
+            <title>{projectInfo.projectName}</title>
+            <meta name="description" content={projectInfo.description}></meta>
+          </Head>
+          <div className="container mx-auto">
+            <ProjectInfo projectInfo={projectInfo} />
+          </div>
+        </>
+      )}
+    </>
   );
 };
 
 export default ProjectPage;
+
+export async function getServerSideProps(context: any) {
+  const id = context.params.id;
+  const API_URL = `${server}/${id}`;
+  const res = await fetch(API_URL);
+  const projectInfo = await res.json();
+  return {
+    props: { projectInfo }, // will be passed to the page component as props
+  };
+}

@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Intro from '../components/indexComponent/Intro';
-import ProjectList from '../components/ProjectList';
+import ProjectList, { IprojectData } from '../components/ProjectList';
 import { server } from '../config/index';
 
-export default function Home({ projectData }: { projectData: [] }) {
+export default function Home({ projectData }: { projectData: IprojectData[] }) {
   console.log(projectData);
   return (
     <div>
@@ -30,7 +30,7 @@ export default function Home({ projectData }: { projectData: [] }) {
 }
 
 export async function getStaticProps() {
-  const API_URL = `${server}/api/projects`;
+  const API_URL = `${server}`;
   const res = await fetch(API_URL);
   const projectData = await res.json();
 

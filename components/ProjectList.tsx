@@ -15,6 +15,8 @@ export interface IprojectData {
   img: string;
 }
 
+const css = { width: '100%', height: 'auto' };
+
 export default function ProjectList({ projectData }: { projectData: IprojectData[] }) {
   // console.log('projectData', projectData);
   return (
@@ -28,9 +30,10 @@ export default function ProjectList({ projectData }: { projectData: IprojectData
               alt={`${item.projectName}-img`}
               width="300"
               height="200"
-              layout="responsive"
-              objectFit="none"
+              sizes="100vw"
+              style={css}
               quality={100}
+              priority={true}
             />
           </Link>
           <div className="p-3">

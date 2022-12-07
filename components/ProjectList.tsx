@@ -45,7 +45,19 @@ export default function ProjectList({ projectData }: { projectData: IprojectData
               </div>
             </div>
             <span className="text-sm">{item.period}</span>
-            <p className="mt-3">{item.description}</p>
+            <p className="my-3">{item.description}</p>
+            <div>
+              <div className="flex items-start gap-2">
+                {item.skill.map((skillItem) => (
+                  <span
+                    key={item.id}
+                    className="px-2 py-1 rounded-md bg-slate-200 text-blue-500 dark:bg-slate-600 dark:text-blue-200"
+                  >
+                    {skillItem}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       ))}

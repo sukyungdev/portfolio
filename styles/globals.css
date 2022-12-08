@@ -2,6 +2,29 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* NanumSquareNeo */
+body {
+  font-family: 'NanumSquareNeo', sans-serif;
+}
+
+.Neo-Light {
+  font-family: 'NanumSquareNeoLight';
+}
+
+.Neo-Bold {
+  font-family: 'NanumSquareNeoBold';
+}
+
+.Neo-ExtraBold {
+  font-family: 'NanumSquareNeoExtraBold';
+}
+
+.Neo-Heavy {
+  font-family: 'NanumSquareNeoHeavy';
+}
+
+/* style */
+
 .bg-primary {
   @apply bg-stone-50 dark:bg-neutral-800;
 }
@@ -12,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply text-neutral-800;
+  @apply text-neutral-900 dark:text-neutral-200;
 }
 
 footer {
@@ -24,13 +47,8 @@ a {
 }
 
 p {
-  @apply text-neutral-800;
+  @apply text-neutral-800 dark:text-neutral-200;
 }
-
-/* .projectCard {
-  @apply flex flex-col rounded-xl duration-300 transform border border-gray-300 hover:scale-105 hover:shadow-lg
-  dark:border-gray-50/20;
-} */
 
 .projectCard {
   @apply flex flex-col rounded-xl bg-neutral-100 duration-300 border border-gray-300 shadow-md shadow-neutral-300

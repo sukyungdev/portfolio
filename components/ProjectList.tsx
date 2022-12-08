@@ -48,9 +48,9 @@ export default function ProjectList({ projectData }: { projectData: IprojectData
             <p className="my-3">{item.description}</p>
             <div>
               <div className="flex items-start gap-2">
-                {item.skill.map((skillItem) => (
+                {item.skill.map((skillItem, index) => (
                   <span
-                    key={item.id}
+                    key={index}
                     className="px-2 py-1 rounded-md bg-slate-200 text-blue-500 dark:bg-slate-600 dark:text-blue-200"
                   >
                     {skillItem}

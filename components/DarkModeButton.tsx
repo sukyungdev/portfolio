@@ -5,7 +5,7 @@ export default function DarkModeButton() {
   return (
     <>
       <button
-        className="inline-flex items-center bg-gray-100 dark:bg-gray-700 border-0 py-1 px-3 focus:outline-none rounded text-base mt-0 hover:text-blue-500 dark:hover:text-yellow-300 dark:text-gray-300"
+        className="border-0 py-1 px-1 focus:outline-none rounded-full mt-0 text-gray-400 bg-neutral-200 hover:text-yellow-400 dark:bg-neutral-600 dark:text-gray-300  dark:hover:text-yellow-300"
         type="button"
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       >

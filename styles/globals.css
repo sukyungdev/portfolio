@@ -43,7 +43,7 @@ footer {
 }
 
 a {
-  @apply text-sky-500;
+  @apply text-gray-900 hover:text-sky-600;
 }
 
 p {

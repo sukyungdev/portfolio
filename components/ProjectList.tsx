@@ -37,20 +37,24 @@ export default function ProjectList({ projectData }: { projectData: IprojectData
           </Link>
           <div className="p-3">
             <div className="flex justify-between">
-              <h2 className="text-xl">{item.projectName}</h2>
+              <h2 className="text-xl Neo-Bold mb-2">{item.projectName}</h2>
               <div>
-                <Link href="#">Demo </Link>
-                <Link href="#">Repository</Link>
+                <Link href={item.demo} className="cardDemoRepo Neo-Bold">
+                  Demo
+                </Link>
+                <Link href={item.repo} className="cardDemoRepo Neo-Bold">
+                  Repository
+                </Link>
               </div>
             </div>
-            <span className="text-sm">{item.period}</span>
-            <p className="my-3">{item.description}</p>
+            <span className="text-sm text-neutral-500 dark:text-neutral-400">{item.period}</span>
+            <p className="mb-3">{item.description}</p>
             <div>
-              <div className="flex items-start gap-2">
+              <div className="flex flex-wrap items-start gap-2">
                 {item.skill.map((skillItem, index) => (
                   <span
                     key={index}
-                    className="px-2 py-1 rounded-md bg-slate-200 text-blue-500 dark:bg-slate-600 dark:text-blue-200"
+                    className="px-2 py-1 rounded-md text-sm bg-neutral-200 text-sky-600 dark:bg-slate-600 dark:text-blue-200"
                   >
                     {skillItem}
                   </span>

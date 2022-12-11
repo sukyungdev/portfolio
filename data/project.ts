@@ -42,7 +42,8 @@ export const projects = [
       '검색, 좋아요, 슬라이드 배너, 모달, 포스터 이미지 렌더, 로딩 스피너 구현 ',
       'MUI를 이용한 스타일링',
     ],
-    img: 'https://user-images.githubusercontent.com/96860670/206892393-1ab049df-3e5d-4416-830b-da47be1739e9.png',
+    // img: 'https://user-images.githubusercontent.com/96860670/206892393-1ab049df-3e5d-4416-830b-da47be1739e9.png',
+    img: '/NanumMovie.png',
   },
   {
     id: 4,
@@ -58,7 +59,8 @@ export const projects = [
       '도시 검색 기능 및 도시에 따른 날씨 예보',
     ],
     point: '',
-    img: 'https://user-images.githubusercontent.com/96860670/206892439-ddd34820-f73d-464c-8520-923377c25714.png',
+    // img: 'https://user-images.githubusercontent.com/96860670/206892439-ddd34820-f73d-464c-8520-923377c25714.png',
+    img: '/WeatherGlass.png',
   },
   {
     id: 5,
@@ -74,11 +76,12 @@ export const projects = [
       '노트 Delete, Update, Add 구현',
       '테마 레이아웃 및 색상 변경기능 구현',
     ],
-    img: 'https://user-images.githubusercontent.com/96860670/206892547-19921e04-98b7-40a8-9be8-3b276712f5d0.png',
+    // img: 'https://user-images.githubusercontent.com/96860670/206892547-19921e04-98b7-40a8-9be8-3b276712f5d0.png',
+    img: '/Noteme.png',
   },
   {
     id: 6,
-    projectName: 'ProjectCollection_CSS',
+    projectName: 'ProjectCollection',
     skill: ['HTML', 'CSS'],
     period: '2022/03/24 ~ 2022/9/19',
     demo: 'https://sudev-cssproject.netlify.app/',
@@ -86,6 +89,7 @@ export const projects = [
     description: 'HTML/CSS로 구현한 웹사이트 모음집',
     feature: [''],
     point: '',
-    img: 'https://user-images.githubusercontent.com/96860670/206892553-72a090b8-ccd9-49b9-9110-21ff512524db.png',
+    // img: 'https://user-images.githubusercontent.com/96860670/206892553-72a090b8-ccd9-49b9-9110-21ff512524db.png',
+    img: '/ProjectCSS.png',
   },
 ];

@@ -29,8 +29,7 @@ export default function ProjectList({ projectData }: { projectData: IprojectData
               src={item.img}
               alt={`${item.projectName}-img`}
               width="300"
-              height="200"
-              sizes="100vw"
+              height="100"
               style={css}
               quality={100}
               priority={true}

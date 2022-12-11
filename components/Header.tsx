@@ -5,11 +5,10 @@ import DarkModeButton from './DarkModeButton';
 export default function Header() {
   return (
     <div>
-      <header className="shadow">
+      <header className="shadow dark:shadow-neutral-600">
         <div className="container mx-auto p-5 flex flex-row items-center">
           <div className="flex flex-grow">
             <Link href={'/'} className="m-0 px-2">
-              {/* <Image src="/logo.png" alt="logo" /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

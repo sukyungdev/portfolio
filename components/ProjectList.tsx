@@ -18,7 +18,6 @@ export interface IprojectData {
 const css = { width: '100%', height: 'auto' };
 
 export default function ProjectList({ projectData }: { projectData: IprojectData[] }) {
-  // console.log('projectData', projectData);
   return (
     <>
       {projectData.map((item) => (
@@ -36,14 +35,14 @@ export default function ProjectList({ projectData }: { projectData: IprojectData
             />
           </Link>
           <div className="p-3">
-            <div className="flex justify-between">
-              <h2 className="text-xl Neo-Bold mb-2">{item.projectName}</h2>
+            <div className="flex justify-between flex-wrap">
+              <h2 className="text-lg sm:text-xl Neo-Bold mb-2">{item.projectName}</h2>
               <div>
                 <Link href={item.demo} className="cardDemoRepo Neo-Bold">
                   Demo
                 </Link>
                 <Link href={item.repo} className="cardDemoRepo Neo-Bold">
-                  Repository
+                  Github
                 </Link>
               </div>
             </div>

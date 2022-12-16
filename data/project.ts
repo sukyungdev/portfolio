@@ -8,7 +8,7 @@ export const projects = [
     repo: '#',
     description: 'text',
     feature: [''],
-    point: '',
+    point: [''],
     img: '/portfolio.png',
   },
   {
@@ -25,7 +25,7 @@ export const projects = [
       'Dynamic API 구현',
       'DarkMode 기능',
     ],
-    point: '',
+    point: [''],
     img: '/portfolio.png',
   },
   {
@@ -88,7 +88,7 @@ export const projects = [
     repo: 'https://github.com/sukyungdev/ProjectCollection_CSS',
     description: 'HTML/CSS로 구현한 웹사이트 모음집',
     feature: [''],
-    point: '',
+    point: [''],
     // img: 'https://user-images.githubusercontent.com/96860670/206892553-72a090b8-ccd9-49b9-9110-21ff512524db.png',
     img: '/ProjectCSS.png',
   },

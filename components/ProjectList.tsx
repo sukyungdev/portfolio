@@ -11,7 +11,7 @@ export interface IprojectData {
   repo: string;
   description: string;
   feature: [];
-  point: string;
+  point: [];
   img: string;
 }
 
@@ -38,10 +38,10 @@ export default function ProjectList({ projectData }: { projectData: IprojectData
             <div className="flex justify-between flex-wrap">
               <h2 className="text-lg sm:text-xl Neo-Bold mb-2">{item.projectName}</h2>
               <div>
-                <Link href={item.demo} className="cardDemoRepo Neo-Bold">
+                <Link href={item.demo} className="cardDemoRepo Neo-Bold bg-neutral-200">
                   Demo
                 </Link>
-                <Link href={item.repo} className="cardDemoRepo Neo-Bold">
+                <Link href={item.repo} className="cardDemoRepo Neo-Bold bg-neutral-200">
                   Github
                 </Link>
               </div>

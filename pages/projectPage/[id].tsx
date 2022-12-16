@@ -12,7 +12,7 @@ const ProjectPage = ({ projectInfo }: { projectInfo: IprojectData }) => {
             <title>{projectInfo.projectName}</title>
             <meta name="description" content={projectInfo.description}></meta>
           </Head>
-          <div className="container mx-auto p-5 h-screen">
+          <div className="container mx-auto p-5">
             <ProjectInfo projectInfo={projectInfo} />
           </div>
         </>

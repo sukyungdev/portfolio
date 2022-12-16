@@ -56,5 +56,5 @@ p {
 }
 
 .cardDemoRepo {
-  @apply px-2 py-1 mr-2 rounded-md bg-gray-200 text-neutral-500 dark:bg-neutral-500 dark:text-neutral-700 dark:hover:text-sky-300;
+  @apply px-2 py-1 mr-2 rounded-md text-neutral-600 dark:bg-neutral-400 dark:text-neutral-800 dark:hover:text-sky-600 border-neutral-400;
 }

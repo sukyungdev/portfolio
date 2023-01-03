@@ -17,7 +17,7 @@ export default function ProjectInfo({
       <section className="">
         <h2 className="text-3xl text-center mb-5">{projectName}</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-1 gap-5 mb-5">
-          <div className="bg-neutral-200 p-5 rounded-md shadow">
+          <div className="bg-neutral-200 p-5 rounded-md shadow  dark:bg-neutral-700 dark:text-neutral-800">
             <Link href={demo} className="cardDemoRepo Neo-Bold bg-neutral-50">
               Demo
             </Link>
@@ -39,20 +39,25 @@ export default function ProjectInfo({
               </div>
             </div>
           </div>
-          <div className="bg-neutral-200 p-5 rounded-md shadow">
-            <p>
+          <div className="bg-neutral-200 p-5 rounded-md shadow  dark:bg-neutral-700 dark:text-neutral-800">
+            <div className="leading-7">
               {point.map((item, index) => (
                 <p key={index}>- {item}</p>
               ))}
-            </p>
+            </div>
+            {link && (
+              <Link href={link} className="">
+                - {link}
+              </Link>
+            )}
           </div>
         </div>
         <div className="w-full mb-10">
           <Image
             src={img}
             alt="project-img"
-            width={500}
-            height={400}
+            width={960}
+            height={540}
             style={css}
             quality={100}
             priority={true}

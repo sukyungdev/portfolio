@@ -13,6 +13,7 @@ export interface IprojectData {
   feature: [];
   point: [];
   img: string;
+  link: string;
 }
 
 const css = { width: '100%', height: 'auto' };

@@ -10,7 +10,7 @@ export default function ProjectInfo({
 }) {
   console.log('projectInfo', projectInfo);
 
-  const { id, projectName, skill, period, demo, repo, description, point, img } = projectInfo;
+  const { id, projectName, skill, period, demo, repo, description, point, img, link } = projectInfo;
   const css = { width: '100%', height: 'auto' };
   return (
     <>

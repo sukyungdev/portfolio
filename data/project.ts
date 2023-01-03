@@ -15,7 +15,6 @@ export const projects = [
       'localStorage를 이용한 저장 기능',
     ],
     img: '/ImageSite.png',
-    link: 'https://sukyungdev-portfolio.vercel.app/api/projects',
   },
   {
     id: 2,
@@ -33,7 +32,6 @@ export const projects = [
     ],
     point: [''],
     img: '/portfolio.png',
-    link: '',
   },
   {
     id: 3,
@@ -51,7 +49,6 @@ export const projects = [
     ],
     // img: 'https://user-images.githubusercontent.com/96860670/206892393-1ab049df-3e5d-4416-830b-da47be1739e9.png',
     img: '/NanumMovie.png',
-    link: '',
   },
   {
     id: 4,
@@ -69,7 +66,6 @@ export const projects = [
     point: [''],
     // img: 'https://user-images.githubusercontent.com/96860670/206892439-ddd34820-f73d-464c-8520-923377c25714.png',
     img: '/WeatherGlass.png',
-    link: '',
   },
   {
     id: 5,
@@ -87,7 +83,6 @@ export const projects = [
     ],
     // img: 'https://user-images.githubusercontent.com/96860670/206892547-19921e04-98b7-40a8-9be8-3b276712f5d0.png',
     img: '/Noteme.png',
-    link: 'https://sukyungdev.github.io/posts/Post-26/',
   },
   {
     id: 6,
@@ -101,6 +96,5 @@ export const projects = [
     point: [''],
     // img: 'https://user-images.githubusercontent.com/96860670/206892553-72a090b8-ccd9-49b9-9110-21ff512524db.png',
     img: '/ProjectCSS.png',
-    link: '',
   },
 ];
